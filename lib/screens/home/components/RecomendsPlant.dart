@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:plant_ui/screens/details/details_screen.dart';
 
 import 'RecommendPlantCard.dart';
 
@@ -20,7 +21,10 @@ class RecomendsPlant extends StatelessWidget {
             size: size,
             country: "Russia",
             title: "Samantha",
-            press: () {},
+            press: () {
+              Navigator.push(context,
+                  MaterialPageRoute(builder: (context) => DetailsScreen()));
+            },
             image: "assets/images/image_1.png",
             price: 440,
           ),
@@ -28,7 +32,10 @@ class RecomendsPlant extends StatelessWidget {
             size: size,
             country: "America",
             title: "Angelica",
-            press: () {},
+            press: () {
+              Navigator.push(context,
+                  MaterialPageRoute(builder: (context) => DetailsScreen()));
+            },
             image: "assets/images/image_2.png",
             price: 450,
           ),
@@ -36,7 +43,10 @@ class RecomendsPlant extends StatelessWidget {
             size: size,
             country: "India",
             title: "Sarah",
-            press: () {},
+            press: () {
+              Navigator.push(context,
+                  MaterialPageRoute(builder: (context) => DetailsScreen()));
+            },
             image: "assets/images/image_3.png",
             price: 440,
           ),

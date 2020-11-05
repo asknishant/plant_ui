@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:plant_ui/screens/details/details_screen.dart';
 
 import '../../../constants.dart';
 
 class TitleWithMoreButton extends StatelessWidget {
-  const TitleWithMoreButton({Key key, this.title, this.press}) : super(key: key);
+  const TitleWithMoreButton({Key key, this.title, this.press})
+      : super(key: key);
 
   final String title;
   final Function press;
@@ -18,7 +20,13 @@ class TitleWithMoreButton extends StatelessWidget {
           ),
           Spacer(),
           FlatButton(
-            onPressed: press,
+            onPressed: () {
+              Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => DetailsScreen(),
+                  ));
+            },
             shape:
                 RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
             color: kPrimaryColor,

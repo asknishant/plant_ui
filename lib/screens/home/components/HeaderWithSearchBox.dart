@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 
 import '../../../constants.dart';
 
-
 class HeaderWithSearchBox extends StatelessWidget {
   const HeaderWithSearchBox({
     Key key,
