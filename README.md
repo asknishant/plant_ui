@@ -19,4 +19,4 @@ samples, guidance on mobile development, and a full API reference.
 
 
 ![App UI](/plant.png)
-![App UI](/Screenshot_1604574195.png)
+<img src="https://github.com/asknishant/plant_ui/blob/master/Screenshot_1604574195.png" width="200" height="400" />
